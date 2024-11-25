@@ -3,8 +3,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.database import get_db
-from src.metadata.model import FileMetadata
+from src.db.session import get_db
+from src.db.models.metadata import FileMetadata
 
 router = APIRouter(
     prefix="/metadata",

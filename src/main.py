@@ -4,8 +4,8 @@ import sys
 from fastapi import FastAPI
 
 from src.config import settings
-from src.metadata.router import router as router_metadata
-from src.upload.router import router as router_upload
+from src.routers.metadata import router as router_metadata
+from src.routers.upload import router as router_upload
 
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 

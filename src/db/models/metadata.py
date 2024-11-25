@@ -1,7 +1,7 @@
 """Модель объекта FileMetadata"""
 from sqlalchemy.orm import Mapped, mapped_column
 
-from src.database import Base
+from src.db.session import Base
 
 
 class FileMetadata(Base):

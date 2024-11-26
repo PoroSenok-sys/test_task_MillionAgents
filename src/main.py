@@ -12,7 +12,7 @@ sys.path.insert(1, os.path.join(sys.path[0], '..'))
 os.makedirs(settings.LOCAL_STORAGE, exist_ok=True)
 
 app = FastAPI(
-    title="Online exhibition kittens"
+    title="Microservice for working with media files"
 )
 
 app.include_router(router_metadata)
